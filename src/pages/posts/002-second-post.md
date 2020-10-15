@@ -4,6 +4,9 @@ date : 2018-12-02 07:00:00
 author : 'Jane Doe'
 path : '/second-post'
 image : '../../images/javascript.jpg'
+tags : 
+    - desgin
+    - tutorial
 ---
 
 Today, we are gonna talk about HTML5 but remember this is the second post. Today, we are gonna talk about HTML5 but remember this is the second post. Today, we are gonna talk about HTML5 but remember this is the second post. Today, we are gonna talk about HTML5 but remember this is the second post. Today, we are gonna talk about HTML5 but remember this is the second post. Today, we are gonna talk about HTML5 but remember this is the second post. Today, we are gonna talk about HTML5 but remember this is the second post.
