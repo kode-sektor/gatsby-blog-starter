@@ -31,29 +31,37 @@ class Header extends React.Component{
     }
 
     render () {
+        
         return (
             <div>
                 <Navbar fixed="top" color="light" light expand="md">
-                <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
-                <Collapse isOpen={this.state.isOpen} navbar>
-                <Nav className="ml-auto" navbar>
-                    <NavItem>
-                        <NavLink href="/team/">Team</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="/tags/">Tags</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="/about/">About</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                    </NavItem>
-                </Nav>
-                <NavbarText>Simple Text</NavbarText>
-                </Collapse>
-            </Navbar>
+
+                    <div className="container">
+
+                        <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+                        <NavbarToggler onClick={this.toggle} />
+
+                        <Collapse isOpen={this.state.isOpen} navbar>
+                            <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <NavLink href="/team/">Team</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="/tags/">Tags</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="/about/">About</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+
+                     </div>
+
+                </Navbar>
+
             </div>
         )
     }
