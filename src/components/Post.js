@@ -12,26 +12,28 @@ const Post = ({title, author, path, date, body, fluid, tags}) => {
             </Link>
             <CardBody>
                 {title}
-            </CardBody>
-            <CardSubtitle>
-                <span className="text-info">{date} </span>by
-                <span className="text-info"> {author}</span>
-            </CardSubtitle>
-            <CardText>{body}</CardText>
-            
-            <ul className="post-tags">
-                {
-                    tags.map(tag => (
-                        <li>
-                            <Link to={`/tag/${slugify(tag)}`}>
-                                <Badge color="primary">{tag}</Badge>
-                            </Link>
-                        </li>
-                    ))
-                }
-            </ul>
+                <CardSubtitle>
+                    <span className="text-info">{date} </span>by
+                    <span className="text-info"> {author}</span>
+                </CardSubtitle>
+                <CardText>{body}</CardText>
 
-            <Link to={path} className="btn btn-outline-primary float-right">Read More</Link>
+                <ul className="post-tags">
+                    {
+                        tags.map(tag => (
+                            <li key={tag}>
+                                <Link to={`/tag/${slugify(tag)}`}>
+                                    <Badge color="primary">{tag}</Badge>
+                                </Link>
+                            </li>
+                        ))
+                    }
+                </ul>
+
+                <Link to={path} className="btn btn-outline-primary float-right">Read More</Link>
+
+            </CardBody>
+            
         </Card>
     )
 }

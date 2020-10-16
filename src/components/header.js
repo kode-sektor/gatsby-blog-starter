@@ -52,9 +52,6 @@ class Header extends React.Component{
                                 <NavItem>
                                     <NavLink href="/about/">About</NavLink>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                                </NavItem>
                             </Nav>
                         </Collapse>
 
